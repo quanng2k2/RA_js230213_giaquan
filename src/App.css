@@ -1,38 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ececec;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  width: 100%;
+  padding: 20px;
+  background-color: #f1b710;
+  text-align: left;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: xx-large;
+  font-weight: 500;
+  color: #fcf3d1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.create-container {
+  margin: 45px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+}
+
+.create {
+  background-color: #ffffff;
+  width: 400px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 19px 0px rgba(149, 149, 149, 0.65);
+}
+
+.create-title {
+  padding: 15px 13px 0px 15px;
+  text-align: left;
+  color: gray;
+}
+
+textarea {
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea::placeholder {
+  color: gray;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.add {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  top: 42%;
+  left: 62%;
+  padding: 5px;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  border-radius: 50px;
+  background-color: #f1b710;
+}
+
+.add:hover {
+  background-color: rgb(183, 183, 183);
+}
+
+.add i {
+  font-size: large;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.render-container {
+  padding: 20px;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.block {
+  text-align: left;
+  padding: 5px;
+  margin: 8px;
+  width: 250px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 3px 19px 0px rgba(129, 129, 129, 0.65);
+}
+
+.delete-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.text {
+  padding: 10px;
+}
+
+.delete {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  padding: 5px;
+  background-color: rgb(232, 232, 232);
+  border-radius: 2px;
+}
+
+.delete i {
+  color: #f1b710;
 }
